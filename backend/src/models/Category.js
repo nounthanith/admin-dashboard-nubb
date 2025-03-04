@@ -5,7 +5,7 @@ const categorySchema = mongoose.Schema({
     name : {
         type : String,
         require : [true, 'Name is require!!!'],
-        unique : true
+        // unique : true
     },
     createdAt : {
         type : Date,
