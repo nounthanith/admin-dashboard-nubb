@@ -2,6 +2,7 @@ const express = require('express')
 const { authRouter } = require('./src/routers/authRouter')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
+const { categoryRouter } = require('./src/routers/categoryRouter')
 
 const app = express()
 const frontendUrl = 'http://localhost:5173';
@@ -16,5 +17,6 @@ app.use(cors({
 }));
 
 authRouter(app)
+categoryRouter(app)
 
 module.exports = app
