@@ -5,7 +5,7 @@ const cors = require('cors')
 const { categoryRouter } = require('./src/routers/categoryRouter')
 
 const app = express()
-const frontendUrl = 'http://localhost:5173';
+const frontendUrl = 'http://localhost:5174';
 
 app.use(express.json())
 app.use(express.urlencoded({extended : true}))

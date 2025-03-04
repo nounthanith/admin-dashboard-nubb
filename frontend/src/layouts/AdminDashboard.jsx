@@ -17,7 +17,7 @@ function AdminLayout() {
 
   return (
     <div className="static">
-      <header className="flex justify-between items-center p-2 bg-[#d6ccc2] dark:bg-[#415a77] sticky top-0 border-b-1">
+      <header className="flex justify-between items-center p-2 bg-[#d6ccc2] dark:bg-[#415a77] sticky top-0 border-b-1 z-10">
         <h1 className="font-bold">System</h1>
         <div className="space-x-2 ">
           <div className="dropdown dropdown-end">

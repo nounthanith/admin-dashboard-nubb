@@ -5,8 +5,7 @@ import Signup from './pages/Signup'
 import AdminLayout from './layouts/AdminDashboard'
 import Protect from './components/Protect'
 import Public from './components/Public'
-import Dashboard from './pages/Dashboard/Dashboard'
-import ProtectAdmin from './components/ProtectAdmin'
+import Dashboard from './pages/dashboard/Dashboard'
 
 function App() {
   return (
