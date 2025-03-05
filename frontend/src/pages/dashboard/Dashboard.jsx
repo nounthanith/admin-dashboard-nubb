@@ -45,7 +45,7 @@ function Dashboard() {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 z-0 w-full lg:w-[70%] m-auto">
-        <div className="border-2 px-5 py-2 rounded-lg w-full">
+        <div className="border-2 px-5 py-5 rounded-lg w-full">
           <div className="flex gap-3">
             <span className="text-green-600">
               <svg
@@ -68,7 +68,7 @@ function Dashboard() {
           <h2 className="text-4xl font-bold">{allUser}</h2>
         </div>
 
-        <div className="border-2 px-5 py-2 rounded-lg w-full">
+        <div className="border-2 px-5 py-5 rounded-lg w-full">
           <div className="flex gap-3">
             <span className="text-green-600">
               <svg
@@ -91,7 +91,7 @@ function Dashboard() {
           <h2 className="text-4xl font-bold">{allUser}</h2>
         </div>
 
-        <div className="border-2 px-5 py-2 rounded-lg w-full">
+        <div className="border-2 px-5 py-5 rounded-lg w-full">
           <div className="flex gap-3">
             <span className="text-green-600">
               <svg
@@ -114,7 +114,7 @@ function Dashboard() {
           <h2 className="text-4xl font-bold">{allUser}</h2>
         </div>
 
-        <div className="border-2 px-5 py-2 rounded-lg w-full">
+        <div className="border-2 px-5 py-5 rounded-lg w-full">
           <div className="flex gap-3">
             <span className="text-green-600">
               <svg

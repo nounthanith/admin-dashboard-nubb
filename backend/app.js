@@ -3,8 +3,6 @@ const cors = require("cors");
 const path = require("path");
 const { categoryRouter } = require("./routers/categoryRouter");
 const { authRouter } = require("./routers/authRouter");
-const { saleRouter } = require("./routers/saleRouter");
-const { productRouter } = require("./routers/productRouter");
 
 const app = express();
 const frontendUrl = "http://localhost:5173";
@@ -23,7 +21,5 @@ app.use(
 
 authRouter(app);
 categoryRouter(app);
-productRouter(app)
-saleRouter(app);
 
 module.exports = app;
