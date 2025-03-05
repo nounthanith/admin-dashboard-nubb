@@ -1,18 +1,21 @@
 const { default: mongoose } = require("mongoose");
 
 
-const categorySchema = mongoose.Schema({
+exports.categorySchema = mongoose.Schema({
     name : {
         type : String,
-        require : [true, 'Name is require!!!'],
-        // unique : true
+        unique : true,
+        require : [true, 'Name is require!!!']
     },
-    createdAt : {
+    note : {
+        type : String,
+    },
+    createAt : {
         type : Date,
         default : Date.now()
     }
 })
 
-const Category = mongoose.model('Category', categorySchema)
+const Category = mongoose.model('Category', this.categorySchema)
 
-module.exports = Category
+module.exports =  Category 

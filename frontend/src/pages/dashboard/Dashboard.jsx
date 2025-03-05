@@ -192,12 +192,12 @@ function Dashboard() {
 
       <div className="z-0 block lg:flex gap-5 w-full lg:w-[70%] m-auto">
         <motion.div
-          className="bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700 w-full md:w-[70%] m-auto mt-5 z-0"
+          className="dark:bg-gray-800 bg-white bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700 w-full md:w-[70%] m-auto mt-5 z-0"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <h2 className="text-xl font-semibold text-gray-100 mb-4">
+          <h2 className="text-xl font-semibold text-black dark:text-gray-100 mb-4">
             Daily Orders
           </h2>
 
@@ -227,12 +227,12 @@ function Dashboard() {
         </motion.div>
 
         <motion.div
-          className="bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700 w-full md:w-[70%] m-auto mt-5 z-0"
+          className="dark:bg-gray-800 bg-white bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700 w-full md:w-[70%] m-auto mt-5 z-0"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <h2 className="text-xl font-semibold text-gray-100 mb-4">
+          <h2 className="text-xl font-semibold dark:text-gray-100 mb-4">
             Order Status Distribution
           </h2>
           <div style={{ width: "100%", height: 300 }}>
