@@ -1,6 +1,6 @@
 const { generateProductCode } = require("./counterController");
 const { removeFile } = require("../utils/removeFile");
-const Product = require("../models/Product");
+const { Product } = require("../models/Product");
 
 exports.create = async (req, res) => {
   try {

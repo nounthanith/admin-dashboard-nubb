@@ -1,5 +1,5 @@
-const categoryController = require('./../controllers/categoryController')
-const authController = require('./../controllers/authController')
+const categoryController = require('../controllers/categoryController')
+const authController = require('../controllers/authController')
 
 exports.categoryRouter = (app)=>{
     app.post('/api/category',authController.authorization, authController.restrictTo('admin'), categoryController.create)

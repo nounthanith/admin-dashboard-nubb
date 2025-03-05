@@ -1,4 +1,4 @@
-const { Counter } = require("./../models/Counter");
+const { Counter } = require("../models/Counter");
 
 exports.getNextInvoiceNumber = async () =>  {
     const result = await Counter.findOneAndUpdate(

@@ -1,4 +1,4 @@
-const saleController = require('./../controllers/saleController')
+const saleController = require('../controllers/saleController')
 const authController = require('../controllers/authController')
 
 exports.saleRouter = (app)=>{
