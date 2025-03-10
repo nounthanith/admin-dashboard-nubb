@@ -6,6 +6,7 @@ import AdminLayout from './layouts/AdminDashboard'
 import Protect from './components/Protect'
 import Public from './components/Public'
 import Dashboard from './pages/dashboard/Dashboard'
+import Category from './pages/category/Category'
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
                   <Route path='/' element={<Protect> <AdminLayout/> </Protect>}>
                         <Route path='/' element={ <Dashboard/>}></Route>
                         <Route path='/signup' element={ <Signup/>  }></Route>
+                        
+                        <Route path='/category' element={<Category/>}></Route>
                   </Route>
 
                   <Route path='/signin' element={<Public> <Signin/> </Public>}></Route>

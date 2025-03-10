@@ -41,9 +41,11 @@ exports.findAll = async (req, res) => {
       queryObject
     );
     const totalPages = Math.ceil(totalItems / limit);
+    const count = await Category.countDocuments(queryObject);
 
     res.status(201).json({
       status: "success",
+      totalItems : count,
       totalPages,
       data: docs,
     });
